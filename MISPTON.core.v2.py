@@ -14,7 +14,8 @@ def Stop():
 
 def Run(pkt,T):
    try:
-      if (str(pkt[IP].dst) == str('163.172.26.106')) and (str(pkt[TCP].dport) == str('35443')):
+      if (str(pkt[IP].dst) == str(' <Remote VPN Server IP> ')) and (str(pkt[TCP].dport) == str(' <VPN Port> ')):
+  #IE if (str(pkt[IP].dst) == str('8.8.8.8')) and (str(pkt[TCP].dport) == str('443')):
          print "\n----------------------------"
          ISP.ToISP(pkt,T)
       else: pass
