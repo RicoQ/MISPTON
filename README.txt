@@ -1,4 +1,4 @@
-# MISPTON
+# MISPTON 
 Multy Internet Service Providers to One Network
 
 -------------------------------------------------------
@@ -17,8 +17,8 @@ Multy Internet Service Providers to One Network
 <---|	     ___|  ISP  |___                 
     |	    |   |_______|   |                  ______
  ___|___    |    _______    |     ______      |      |
-|	|VPN|   |       |   | VPN|      |WAN /        \
-|  RPI	|---|---|  ISP  |---|----| Sev  |---| Internet |
+|	|VPN|   |       |   | VPN| Serv |WAN /        \
+|  RPI	|---|---|  ISP  |---|----| Dist |---| Internet |
 |_______|   |   |_______|   |    |______|    \        /
  	    |    _______    |                 |______|
  	    |___|       |___|
@@ -49,7 +49,14 @@ Multy Internet Service Providers to One Network
    so on and so on. (This multiplies your bandwith by the 
    number of connection ISP.]     
     
-    
+ (Note: This is Theoratical work only, needs to be tested 
+ and refined. It is only a concept, with the basic 
+ programing, I still need to work out how to block the 
+ Ethernet pkts before I can send them to the proper ISPs 
+ other wise, they're gonna be sent twice; 
+     Once thought the default Gateway and then a 
+     Seconde time when they are sent by the module scapy.
+ This part needs work ^^) 
 ---------------------------------------------------------
 
 Being relativly new to programming, as well as 100% self taught! My work might be a little basic and some times redondante.
